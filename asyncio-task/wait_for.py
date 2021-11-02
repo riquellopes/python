@@ -1,10 +1,10 @@
 import asyncio
 
-async def eternity():
+async def eternity() -> None:
     await asyncio.sleep(3600)
     print('yay!')
 
-async def main():
+async def main() -> None:
     try:
         await asyncio.wait_for(eternity(), timeout=1.0)
     except asyncio.TimeoutError:

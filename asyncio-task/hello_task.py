@@ -1,11 +1,11 @@
 import asyncio
 import time
 
-async def say_after(delay, what):
+async def say_after(delay, what) -> None:
     await asyncio.sleep(delay)
     print(what)
 
-async def main():
+async def main() -> None:
     task_one = asyncio.create_task(
         say_after(1, 'Hello')
     )

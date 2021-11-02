@@ -1,6 +1,6 @@
 import asyncio
 
-async def nested():
+async def nested() -> int:
     return 42
 
 async def main():
